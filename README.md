@@ -61,6 +61,8 @@ La page "À Propos" offre un aperçu détaillé de l'application LibraTech, soul
 
 ### Logout
 La fonction de déconnexion permet aux utilisateurs de se déconnecter en toute sécurité de leur session, assurant ainsi la protection de leurs données et de leur confidentialité.
+
+
 ![Logout](./images/logout.PNG)
 
 LibraTech s'engage à fournir une solution complète pour la gestion de bibliothèques. Simplifiez vos opérations quotidiennes et offrez une meilleure expérience à vos utilisateurs.
