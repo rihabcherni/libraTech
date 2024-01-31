@@ -1,7 +1,4 @@
-# libraTech
-
-
-### Mini Projet Java- Gestion de Bibliothèque avec JavaFX et mysql 
+# libraTech: Gestion de Bibliothèque avec java, JavaFX et mysql 
 
 ## À Propos de LibraTech: Description
 LibraTech, notre application de gestion de bibliothèque développée en utilisant le framework JavaFX et MySQL, offre une variété de fonctionnalités conviviales grâce à ses interfaces intuitives. Découvrer comment chaque interface contribue à simplifier la gestion de votre bibliothèque. L'application inclut une base de données pour gérer les lecteurs, les livres, et d'autres éventuelles tables nécessaires.
@@ -10,21 +7,31 @@ LibraTech, notre application de gestion de bibliothèque développée en utilisa
 
 ### Acceuil
 L'interface d'accueil offre la possibilité de voir le logo de l'application ainsi qu'une description de celle-ci.
+
 ![Acceuil](./images/1.PNG)
 ---
+
 ### Login
 La page de connexion fournit une interface sécurisée où les utilisateurs peuvent saisir leurs informations d'identification pour accéder à l'application.
 ![Login](./images/2.PNG)
 ![Login2](./images/3.PNG)
+---
+---
 
 ### Dashboard
 Vous pouvez accéder rapidement aux statistiques. L'interface Dashboard fournit une vue d'ensemble de l'état actuel de votre bibliothèque.
+
 ![Dashboard](./images/dash.PNG)
+---
+---
 
 ### Lecteurs
 Ajoutez, supprimez et recherchez des lecteurs. L'interface Lecteurs vous permet de visualiser et de mettre à jour les détails de chaque lecteur.
+
 ![Lecteurs](./images/lecteur.PNG)
 ![Lecteur ajouté](./images/addLecteur.PNG)
+---
+---
 
 ### Livres
 L'interface vous permet d'ajouter de nouveaux livres, de les supprimer et de les rechercher.
