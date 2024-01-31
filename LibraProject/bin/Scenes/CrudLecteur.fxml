@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CrudLecteurController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="505.0" styleClass="form-add">
+               <children>
+                   <Label fx:id="titleLecteur" alignment="TOP_LEFT" contentDisplay="CENTER" text="Ajouter lecteur" textFill="#971900">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Roboto Bold Italic" size="21.0" />
+         </font>
+      </Label>
+                  <HBox>
+                     <children>
+                        <VBox prefHeight="144.0" prefWidth="240.0">
+                           <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/userIcon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="nom" prefHeight="26.0" prefWidth="300.0" promptText="Nom">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Roboto Bold Italic" size="14.0" />
+                           </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="132.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/male-and-female.256x194.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <ComboBox fx:id="genre" prefHeight="37.0" prefWidth="176.0" promptText="Genre" styleClass="select">
+                                       <padding>
+                                          <Insets bottom="3.0" left="8.0" right="8.0" top="3.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/email.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="email" prefHeight="26.0" prefWidth="286.0" promptText="email">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Roboto Bold Italic" size="14.0" />
+                           </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="132.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/address.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="adresse" prefHeight="26.0" prefWidth="286.0" promptText="Adresse">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Roboto Bold Italic" size="14.0" />
+                           </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="144.0" prefWidth="240.0">
+                           <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/userIcon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="prenom" prefHeight="26.0" prefWidth="300.0" promptText="Prénom">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Roboto Bold Italic" size="14.0" />
+                           </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/id-card.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="cin" prefHeight="26.0" prefWidth="286.0" promptText="CIN">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Roboto Bold Italic" size="14.0" />
+                           </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="243.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/phone.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <TextField fx:id="phone" prefHeight="26.0" prefWidth="286.0" promptText="phone">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Roboto Bold Italic" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/schedule.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <DatePicker fx:id="Date_Naissance" prefHeight="41.0" prefWidth="181.0" promptText="Date de naissance" styleClass="date">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </DatePicker>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+      <VBox alignment="CENTER" prefWidth="100.0">
+         <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                  <Button fx:id="annulerLecteur" mnemonicParsing="false" onMouseClicked="#ViderLecteur" prefWidth="120.0" styleClass="btn-annuler" text="Annuler">
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="ajouterLecteur" mnemonicParsing="false" onMouseClicked="#AddUpdateLecteur" prefWidth="120.0" styleClass="btn" text="Ajouter">
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+         </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+      </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="5.0" right="5.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="250.0" styleClass="img-add">
+               <children>
+                  <ImageView fitHeight="151.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/lecteur-add.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="60.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/libratech.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

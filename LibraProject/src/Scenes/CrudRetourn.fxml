@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CrudRetournerController">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefWidth="340.0" styleClass="form-add">
+               <children>
+                   <Label alignment="TOP_LEFT" contentDisplay="CENTER" text="Choisir livre" textFill="#971900">
+         <font>
+            <Font name="Roboto Bold Italic" size="21.0" />
+         </font>
+      </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/bookicon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="livreId" editable="false" prefHeight="38.0" prefWidth="257.0" promptText="Donner numéro Livre">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Roboto Bold Italic" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                        <Button fx:id="rechercheLivre" mnemonicParsing="false" onMouseClicked="#rechLivre">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/search.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bookicon.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="titre" editable="false" prefHeight="26.0" prefWidth="300.0" promptText="Titre">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Roboto Bold Italic" size="14.0" />
+               </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/editor.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="auteur" editable="false" prefHeight="26.0" prefWidth="300.0" promptText="Auteur">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Roboto Bold Italic" size="14.0" />
+               </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/barcode.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="CodeISBN" editable="false" prefHeight="26.0" prefWidth="286.0" promptText="CodeISBN">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Roboto Bold Italic" size="14.0" />
+               </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/options.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="categorie" editable="false" prefHeight="26.0" prefWidth="286.0" promptText="Categorie ">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Roboto Bold Italic" size="14.0" />
+               </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bookshelf.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+                        <TextField fx:id="etagere_id" editable="false" prefHeight="26.0" prefWidth="286.0" promptText="Etagere">
+                           <font>
+                              <Font name="Roboto Bold Italic" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+      </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="30.0" top="70.0" />
+               </padding>
+            </VBox>
+             <VBox alignment="CENTER" prefWidth="340.0" styleClass="img-add">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" text="Lecteur" textFill="#971900">
+                     <font>
+                        <Font name="Roboto Bold Italic" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/lecteur.PNG" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="cinLecteur" editable="false" prefHeight="38.0" prefWidth="274.0" promptText="Donner numéro Lecteur">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Roboto Bold Italic" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                        <Button fx:id="rechercheLecteur" mnemonicParsing="false" onMouseClicked="#rechLecteur">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/search.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox prefHeight="240.0" prefWidth="390.0">
+                     <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="48.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/userIcon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="nom" editable="false" prefHeight="38.0" prefWidth="284.0" promptText="Nom">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Roboto Bold Italic" size="14.0" />
+                     </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/userIcon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="prenom" editable="false" prefHeight="26.0" prefWidth="300.0" promptText="Prénom">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Roboto Bold Italic" size="14.0" />
+                     </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/email.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="email" editable="false" prefHeight="26.0" prefWidth="286.0" promptText="email">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Roboto Bold Italic" size="14.0" />
+                     </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/address.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="adresse" editable="false" prefHeight="26.0" prefWidth="286.0" promptText="Adresse">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Roboto Bold Italic" size="14.0" />
+                     </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="243.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/phone.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="phone" editable="false" prefHeight="26.0" prefWidth="286.0" promptText="phone">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Roboto Bold Italic" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="20.0" right="30.0" top="60.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="340.0" styleClass="form-add">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" text="Choisir Dates" textFill="#971900">
+                     <font>
+                        <Font name="Roboto Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/schedule.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <DatePicker fx:id="dateEmprunt" editable="false" prefHeight="41.0" prefWidth="297.0" promptText="Date Emprunt" styleClass="date">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/schedule.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <DatePicker fx:id="dRP" editable="false" prefHeight="41.0" prefWidth="297.0" promptText="Date Retour Prevu" styleClass="date">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/schedule.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <DatePicker fx:id="dRReel" editable="false" prefHeight="41.0" prefWidth="297.0" promptText="Date retour reel" styleClass="date">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+      <VBox alignment="CENTER" prefWidth="100.0">
+         <children>
+                        <HBox alignment="CENTER" prefHeight="40.0">
+                           <children>
+                  <Button fx:id="annulerRetour" mnemonicParsing="false" onMouseClicked="#ViderRetour" prefWidth="120.0" styleClass="btn-annuler" text="Annuler">
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="ajouterRetour" mnemonicParsing="false" onMouseClicked="#AddUpdateRetour" prefWidth="120.0" styleClass="btn" text="Ajouter">
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+         </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+      </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="20.0" right="20.0" top="50.0" />
+               </padding>
+            </VBox>
+         
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="990.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/libratech.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="66.0" prefWidth="929.0">
+               <children>
+                   <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="38.0" prefWidth="250.0" text="Retourner Livre" textFill="#971900">
+            <font>
+            <Font name="Roboto Bold Italic" size="30.0" />
+            </font>
+            </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="20.0" />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>

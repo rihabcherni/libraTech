@@ -1,0 +1,165 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/************************************   Welcome page : ************************************* */
+.welcomeBox{
+    -fx-background-color: rgba(74, 44, 44, 0.6);
+	-fx-background-radius: 15px;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 15px;
+	-fx-border-width: 5px;
+	-fx-text-fill: whitesmoke ;
+}
+.welcomeTitle{
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight:bold;
+	-fx-font-size:30px;
+} 
+Text{
+	-fx-text-fill: #FFFFFF;
+	-fx-font-size:13px;	
+	-fx-font-weight:bold;
+}
+/************************************    page Main: ************************************* */
+
+.main-btn{
+	-fx-background-radius: 15px;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 15px;
+	-fx-margin:20px;
+	-fx-padding:7px 30px;
+	-fx-border-width: 2px;
+	-fx-text-fill: whitesmoke ;
+	-fx-background-color: #E48F45 ;
+}
+
+.btn-signIn{
+	-fx-background-color: blue ;
+	-fx-background-radius: 15px;
+	-fx-border-radius: 15px;
+	-fx-padding:7px 20px;
+	-fx-text-fill: whitesmoke ;
+	-fx-font-size:12px;
+	-fx-font-weight:bold;	
+}
+.btn-forgot-password{
+	-fx-background-color: none ;
+	-fx-border: none;
+	-fx-font-size:14px;
+	-fx-font-weight:bold;	
+}
+/************************************    page dashboard: ************************************* */
+.menu{
+	-fx-background-color: #E2C799 ;
+}
+.activeLink{
+	-fx-background-color: #E48F45 ;
+	-fx-text-fill: #fff;
+	-fx-font-size:16px;
+	-fx-font-weight:bold;	
+}
+
+.cardDash{
+	-fx-background-color: #E48F45 ;
+	-fx-background-radius: 15px;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 15px;
+	-fx-border-width: 5px;
+	-fx-text-fill: whitesmoke ;
+}
+.cardText{
+	-fx-font-size:14px;
+	-fx-font-weight:bold;	
+	-fx-text-fill: whitesmoke ;
+}
+.cardValue{
+	-fx-font-size:22px;
+	-fx-font-weight:bold;	
+	-fx-text-fill: whitesmoke ;
+}
+/************************************    page livres: ************************************* */
+.headerTitle{
+	-fx-background-color: #E48F45 ;
+}
+.headerText{
+	-fx-font-size:14px;
+	-fx-font-weight:bold;	
+	-fx-fill: white;
+	
+}
+
+/************************************  table style *********************************** */
+.btn{
+    -fx-cursor:hand ;
+    -fx-background-radius: 15px;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 15px;
+	-fx-border-width: 2px;
+	-fx-text-fill: whitesmoke ;
+	-fx-background-color: #E48F45 ;
+	-fx-padding:8px;
+	-fx-font-size:14px;
+	-fx-font-weight:bold;	
+}
+.btn-annuler{
+    -fx-cursor:hand ;
+    -fx-background-radius: 15px;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 15px;
+	-fx-border-width: 2px;
+	-fx-text-fill: whitesmoke ;
+	-fx-background-color: #994D1C ;
+	-fx-padding:8px;
+	-fx-font-size:14px;
+	-fx-font-weight:bold;	
+}
+.table-view {
+    -fx-background-color:#EAD196;
+    -fx-background-radius:14 14 0 0;
+}
+.table-view .column-header, .table-view .filler{
+   -fx-size:50px;
+   -fx-background-color:#E48F45;        
+}
+    
+.table-view .column-header .label {
+    -fx-text-fill: white ;
+    -fx-font-size:12px;
+	-fx-font-weight:bold;	
+}
+.table-view-lecteur .column-header{
+   -fx-background-color: #E48F45 !important;
+ }  
+ .table-view-livre .column-header{
+   -fx-background-color: #E48F45 !important;
+ }  
+/************************************  add employe *********************************** */
+.form-add{
+	-fx-background-color: #E2C799 ;
+}
+.img-add{
+	-fx-background-color: #F2ECBE ;
+}
+.select, .date{
+	-fx-text-fill: #B0A695  ;
+    -fx-font-size:13px;
+	-fx-font-weight:bold;	
+	-fx-background-color: white ;
+	-fx-border-color: #cccccc;
+	-fx-border-width: 2px;
+}
+/* outer combo-box text */
+.select .list-cell {
+  -fx-text-fill: #B0A695;
+}
+
+.select .list-view .list-cell {
+  -fx-text-fill: black;
+}
+.select .list-view .list-cell:focused {
+  -fx-background-color : #5F9EA0;  /* Cadet Blue */
+  -fx-text-fill: #E5E1DA;
+}
+.select .list-view .list-cell:hover {
+  -fx-background-color : #5F9EA0;  /* Cadet Blue */
+  -fx-text-fill: white;
+}

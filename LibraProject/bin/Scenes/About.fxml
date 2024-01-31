@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox>
+         <children>
+            <VBox prefWidth="790.0">
+               <children>
+                  <Label prefHeight="47.0" text="À Propos de LibraTech" textFill="#970505">
+                     <font>
+                        <Font name="Roboto Bold Italic" size="31.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Présentation">
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LibraTech, notre application de gestion de bibliothèque développée en utilisant le framework JavaFX et Mysql. offre une variété de fonctionnalités conviviales" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" grâce à ses interfaces intuitives. Découvrez comment chaque interface contribue à simplifier la gestion de votre bibliothèque." />
+                  <Label text="Fonctionnalités Principales">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="1136.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="57.0" prefWidth="51.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/dashboard.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="24.0" prefWidth="1081.0">
+                           <children>
+                              <Text fill="#e11a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vous pouvez accéder rapidement aux statistiques. L'interface Dashboard fournit une vue d'ensemble de l'état actuel de votre bibliothèque." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="1411.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="36.0" prefWidth="32.0">
+                           <children>
+                              <ImageView fitHeight="33.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/lecteur2.jpg" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#e11a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecteurs">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ajoutez, supprimez et recherchez des lecteurs. L'interface Lecteurs vous permet de visualiser et de mettre à jour les détails de chaque lecteur." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="1411.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="37.0" prefWidth="28.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/books.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#e11a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Livres">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="L'interface vous permet d'ajouter de nouveaux livres, de les supprimer et de les rechercher." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="13.0" prefWidth="1108.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="37.0" prefWidth="31.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/issue.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#e11a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Emprunt de Livres">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Facilitez le processus d'emprunt avec l'interface Emprunt de Livres. Suivez les transactions d'emprunt, identifiez les livres disponibles." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="4.0" prefWidth="1185.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="37.0" prefWidth="40.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/return.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#e11a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Retour de Livres">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Simplifie le processus de retour. Identifiez les livres retournés et mettez à jour automatiquement l'état de disponibilité." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="1185.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="37.0" prefWidth="41.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/employe-card.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#e11a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Employés">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ajoutez de nouveaux employés, modifiez leurs détails et assurez-vous que l'équipe fonctionne de manière optimale." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="1185.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="36.0" prefWidth="38.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/bookshelf.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fill="#e11a1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Étagère">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Optimisez le stockage des livres. Visualisez la disposition des livres dans les étagères." />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LibraTech s'engage à fournir une solution complète pour la gestion de bibliothèques. ">
+                     <VBox.margin>
+                        <Insets left="200.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" Simplifiez vos opérations quotidiennes et offrez une meilleure expérience à vos utilisateurs.">
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="**LibraTech - Simplifiez la Gestion de Votre Bibliothèque avec Efficacité!**">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="210.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="343.0" prefWidth="152.0">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/libratech.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

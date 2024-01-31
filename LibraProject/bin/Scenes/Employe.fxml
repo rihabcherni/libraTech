@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EmployeController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="58.0">
+               <children>
+                  <Text fill="#5b0404" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 22;" text="Liste des employes" wrappingWidth="542.84228515625">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="30.0">
+                     <children>
+                        <Button fx:id="exportPdfEmploye" mnemonicParsing="false" onMouseClicked="#exportToPDF" style="-fx-background-color: none;">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/pdf.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </Button>
+					     <TextField fx:id="rechercheEmploye" onKeyReleased="#rechercherEmploye" prefHeight="26.0" prefWidth="220.0" promptText="Rechercher ...">
+					            <padding>
+					                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+					            </padding>
+					        </TextField>
+					                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+					                    <image>
+					                        <Image url="@../images/search.png" />
+					                    </image>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+					                </ImageView>
+                        <Button fx:id="ajouterEmploye" mnemonicParsing="false" onMouseClicked="#openAddEmploye" prefWidth="112.0" styleClass="btn" text="Ajouter">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="employesTableView">
+               <columns>
+                  <TableColumn fx:id="employeIdColumn" prefWidth="121.0" text="Numéro employe" />
+                  <TableColumn fx:id="nomColumn" prefWidth="120.0" text="Nom" />
+                  <TableColumn fx:id="prenomColumn" prefWidth="120.0" text="Prénom" />
+                  <TableColumn fx:id="emailColumn" prefWidth="200.0" text="email" />
+                  <TableColumn fx:id="phoneColumn" prefWidth="120.0" text="phone" />
+                  <TableColumn fx:id="posteColumn" prefWidth="120.0" text="Poste" />
+                  <TableColumn fx:id="actionsColumn" prefWidth="160.0" text="Actions" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

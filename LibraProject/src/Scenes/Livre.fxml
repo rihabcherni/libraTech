@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LivreController">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="58.0">
+               <children>
+                  <Text fill="#5b0404" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 22;" text="Liste des livres " wrappingWidth="358.84228515625">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="30.0">
+                     <children>
+                        <Button fx:id="exportPdfLivre" minWidth="45.0" mnemonicParsing="false" onMouseClicked="#exportToPDF" prefHeight="44.0" prefWidth="45.0" style="-fx-background-color: none;">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/pdf.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </Button>
+					     <TextField fx:id="rechercheLivre" onKeyReleased="#rechercherLivre" prefHeight="44.0" prefWidth="232.0" promptText="Rechercher ...">
+					            <padding>
+					                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+					            </padding>
+					        </TextField>
+      					                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+      					                    <image>
+      					                        <Image url="@../images/search.png" />
+      					                    </image>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+      					                </ImageView>
+                        <Button fx:id="ajouterLivre" mnemonicParsing="false" onMouseClicked="#openAddLivre" prefWidth="112.0" styleClass="btn" text="Ajouter">
+                           <HBox.margin>
+                              <Insets left="40.0" right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="actLivre" mnemonicParsing="false" onMouseClicked="#actLivre" prefWidth="112.0" styleClass="btn" text="Actualiser" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="livresTableView">
+               <columns>
+                  <TableColumn fx:id="codeLivreColumn" prefWidth="90.0" text="Code Livre" />
+                  <TableColumn fx:id="titreColumn" prefWidth="140.0" text="Titre" />
+                  <TableColumn fx:id="auteurColumn" text="Auteur" />
+                  <TableColumn fx:id="codeISBNColumn" prefWidth="95.0" text="CodeISBN" />
+                  <TableColumn fx:id="etagereColumn" text="Etagere" />
+                  <TableColumn fx:id="categorieColumn" prefWidth="91.0" text="Categorie" />
+                  <TableColumn fx:id="disponibleColumn" prefWidth="100.0" text="Disponible" />
+                  <TableColumn fx:id="Date_ajoutColumn" prefWidth="120.0" text="Date_ajout" />
+                  <TableColumn fx:id="actionsColumn" prefWidth="145.0" text="Actions" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="20.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>
