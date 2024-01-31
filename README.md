@@ -11,6 +11,7 @@ LibraTech, notre application de gestion de bibliothèque développée en utilisa
 ### Acceuil
 L'interface d'accueil offre la possibilité de voir le logo de l'application ainsi qu'une description de celle-ci.
 ![Acceuil](./images/1.PNG)
+|:--------------|:-------------:|--------------:|
 
 ### Login
 La page de connexion fournit une interface sécurisée où les utilisateurs peuvent saisir leurs informations d'identification pour accéder à l'application.
